@@ -10,6 +10,7 @@ import Dash from './Dash';
 import Goals from './Goals';
 import Habits from './Habits';
 import Todos from './Todos';
+import Archive from './Archive';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Login} />
             <Route path="/dash" component={Dash} />
+            <Route path="/archive" component={Archive} />
             <Route path="/habits" component={Habits} />
             <Route path="/todos" component={Todos} />
             <Route path="/goals" component={Goals} />

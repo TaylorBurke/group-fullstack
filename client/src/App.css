@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  margin-top: 20px;
+  height: 70px;
+}
+
+.App-header {
+  background-color:  rgb(70, 160, 120);
+  width: 100%;
+  height: 190px;
+  color: rgb(40, 120, 85);
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color:  rgb(40, 0, 85);
+  width: auto;
+}
+
+.navBar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.navBar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.Dash {
+  background-color: rgb(70, 160, 120);
+}
+
+.navBar a:hover {
+  color: rgb(70, 160, 120);
+  text-decoration: none;
+}
+
+.Login {
+  background-color:  rgb(70, 160, 120);
+}
+
+.Login input {
+  display: inline-block;
+  padding: 1em;margin: 1em;
+  font-size: .9rem;
+  margin-bottom: 60px;
+}
+
+.Login button {
+  font-size: .9rem;
+  display: inline-block;
+  padding: 1em;margin: 1em;
+/*   border-radius: 5px; */
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: all .6s ease-out;
+}
+
+.Login button:hover {
+  background-color:  rgb(70, 160, 120);
+}
+
+#injector {
+  color: rgb(71, 63, 80);
+  margin: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background: linear-gradient(to bottom, rgb(70, 160, 120) 20%, rgb(40, 120, 85) 100%);
+}
+
+.footer a {
+  margin-top: 100px;
+}
+
+.footer a:hover {
+  margin-top: 94px;
+}

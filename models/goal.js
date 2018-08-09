@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const newGoal = new mongoose.Schema({
+const Goal = new mongoose.Schema({
     date: {
         type: Date,
         required: true
@@ -28,4 +28,4 @@ const newGoal = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model('goal', newGoal);
+module.exports = mongoose.model('goal', Goal);

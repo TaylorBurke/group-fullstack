@@ -1,31 +1,15 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const Goal = new mongoose.Schema({
-    date: {
-        type: Date,
-        required: true
-    },
-    title: {
-        type: String,
-        required: true
-    },
-    milestone: {
-        type: String,
-        required: false
-    },
-    description: {
-        type: String,
-        required: false
-    },
-    difficulty: {
-        type: String,
-        required: true
-    },
-    complete: {
-        type: Boolean,
+const goalSchema = new Schema({
+    title: String,
+    difficulty: String,
+    completed: Boolean,
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
         required: true
     }
-
 });
 
-module.exports = mongoose.model('goal', Goal);
+module.exports = mongoose.model('goal', goalSchema);

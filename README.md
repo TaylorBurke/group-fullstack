@@ -1,7 +1,11 @@
 hello!
 
-This repo is for fun. AND!
+This repo is for the group project of 
 
-For testing of pull requests and branches etc
+Roy 
 
-I hope you have a Great Day!
+&
+
+Taylor
+
+* please use comments for clarity

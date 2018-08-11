@@ -3,13 +3,15 @@ hello!
 This repo is for the group project of 
 
 //////////////////////////////////////////////////////
-//////////////////
-//////////////////  Roy 
-//////////////////
-//////////////////  &
-//////////////////
-//////////////////  Taylor
-//////////////////
+
+
+  Roy 
+
+  &
+
+  Taylor
+
+
 //////////////////////////////////////////////////////
 
 * please use comments in code for clarity
@@ -30,8 +32,18 @@ $ git push origin {branch name}
 
 4.5) get approved from team! This completes the merge.
 
+4.6) back into dev branch
+$git checkout dev
+
 5) delete the branch from your repositories (Github and local):
 $ git branch -D {name of branch}
 
 6) pull back into dev branch
 $ git pull origin dev
+
+
+
+
+useful links:
+https://coursework.vschool.io/git-commands-and-workflows-cheat-sheet/
+

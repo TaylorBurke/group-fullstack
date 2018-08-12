@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: right;
   display: flex;
   flex-direction: column;
 }
@@ -21,11 +21,7 @@
 }
 
 .App-intro {
-  display: flex;
-  justify-content: center;
   font-size: 1.2rem;
-  color:  rgb(40, 0, 85);
-  width: auto;
 }
 
 .navBar {
@@ -38,6 +34,7 @@
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  padding: 15px;
 }
 
 .navBar a {
@@ -68,7 +65,7 @@
   margin-bottom: 60px;
 }
 
-.Login button {
+button {
   font-size: .9rem;
   display: inline-block;
   padding: 1em;margin: 1em;
@@ -79,7 +76,7 @@
   transition: all .6s ease-out;
 }
 
-.Login button:hover {
+button:hover {
   background-color:  rgb(70, 160, 120);
 }
 

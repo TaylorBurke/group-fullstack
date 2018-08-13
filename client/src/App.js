@@ -37,7 +37,7 @@ class App extends Component {
             <Route path="/todos" component={Todos} />
             <Route path="/goals" component={Goals} />
           </Switch>
-          <Experience />
+          
 
           <Footer />
         </div>

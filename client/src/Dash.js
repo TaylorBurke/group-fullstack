@@ -4,6 +4,7 @@ import Todos from './Todos';
 import Goals from './Goals';
 import Archive from './Archive';
 import { Link } from 'react-router-dom';
+import Experience from './Experience';
 
 
 const Dash = () => {
@@ -17,6 +18,8 @@ const Dash = () => {
             <Todos />
             <Link to ="/goals">Goals </Link>
             <Goals />
+
+            <Experience />
         </div>
     )
 }

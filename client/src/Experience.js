@@ -5,7 +5,28 @@ import Bar from './Bar';
 
 class Experience extends Component {
     state = {
-
+        exp: [
+            {
+                lvl: 1,
+                limit: 199
+            },
+            {
+                lvl: 2,
+                limit: 299
+            },
+            {
+                lvl: 3,
+                limit: 399
+            },
+            {
+                lvl: 4,
+                limit: 999
+            },
+            {
+                lvl: 5,
+                limit: 9999
+            }
+        ]
     }
 
     renderLines() {

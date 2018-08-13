@@ -24,6 +24,43 @@
   font-size: 1.2rem;
 }
 
+.graph {
+  position: relative;
+  max-width: 800px;
+  height: 400px;
+}
+
+.bar-text-content {
+  height: 100%;
+  width: 15%;
+  background: tomato;
+}
+
+.bar-lines-container {
+  width: 85%;
+  height: 100;
+  background: purple;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  left: 10%;
+}
+
+.bar {
+  height: 16.66%;
+  background: #e05b42;
+  z-index: 25;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  margin: 6px;
+}
+
 .navBar {
   height: 100%;
   width: 160px;

@@ -10,6 +10,7 @@ import Dash from './Dash';
 import Goals from './Goals';
 import Habits from './Habits';
 import Todos from './Todos';
+import Experience from './Experience';
 import Archive from './Archive';
 
 class App extends Component {
@@ -36,7 +37,7 @@ class App extends Component {
             <Route path="/todos" component={Todos} />
             <Route path="/goals" component={Goals} />
           </Switch>
-
+          <Experience />
 
           <Footer />
         </div>

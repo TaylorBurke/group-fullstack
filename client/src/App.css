@@ -6,6 +6,7 @@
 
 .App-logo {
   margin-top: 20px;
+  padding-right: 20px;
   height: 70px;
 }
 
@@ -19,16 +20,18 @@
 
 .App-title {
   font-size: 1.5em;
+  padding-right: 20px
 }
 
 .App-intro {
   font-size: 1.2rem;
+  padding-right: 20px
 }
 
 .graph {
   position: relative;
-  max-width: 800px;
-  height: 400px;
+  max-width: 500px;
+  height: 200px;
 }
 
 .bar-text-content {
@@ -65,21 +68,22 @@
 .navBar {
   height: 100%;
   width: 160px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
   padding-top: 20px;
   padding: 15px;
+  
 }
 
 .navBar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #dadada;
   display: block;
 }
 

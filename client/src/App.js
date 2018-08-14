@@ -10,6 +10,7 @@ import Dash from './Dash';
 import Goals from './Goals';
 import Habits from './Habits';
 import Todos from './Todos';
+import Experience from './Experience';
 import Archive from './Archive';
 
 class App extends Component {
@@ -20,9 +21,9 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">RPGoals</h1>
+            <h1 className="App-title">Goal  Streak</h1>
             <div className="App-intro">
-              Grow your character in the game and in real life.
+              Fun. Simple. Done.
         </div>
           </header>
 
@@ -36,7 +37,7 @@ class App extends Component {
             <Route path="/todos" component={Todos} />
             <Route path="/goals" component={Goals} />
           </Switch>
-
+          
 
           <Footer />
         </div>

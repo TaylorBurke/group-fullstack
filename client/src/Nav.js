@@ -12,9 +12,26 @@ class Nav extends Component {
         this.store = typeof localStorage === 'undefined' ? null : localStorage;
 
         this.css = `  
-        html { filter: invert(100%); background: #fefefe; }  
-        * { background-color: inherit }
-        img:not([src*=".svg"]), video { filter: invert(100%) }`
+        
+        
+        .App-header {
+            background: linear-gradient(to top, #111 20%, black 100%);            color: #dadada;
+        }
+        .Dash {
+            background-color: #111;
+            color: #dadada;
+        }
+        .Login {
+            background-color: #111;
+            
+        }
+
+        .footer {
+            background: linear-gradient(to bottom, #111 20%, black 100%);
+        }
+
+        
+        `
 
 
 

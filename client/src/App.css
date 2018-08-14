@@ -1,11 +1,12 @@
 .App {
-  text-align: center;
+  text-align: right;
   display: flex;
   flex-direction: column;
 }
 
 .App-logo {
   margin-top: 20px;
+  padding-right: 20px;
   height: 70px;
 }
 
@@ -14,37 +15,75 @@
   width: 100%;
   height: 190px;
   color: rgb(40, 120, 85);
+
 }
 
 .App-title {
   font-size: 1.5em;
+  padding-right: 20px
 }
 
 .App-intro {
-  display: flex;
-  justify-content: center;
   font-size: 1.2rem;
-  color:  rgb(40, 0, 85);
-  width: auto;
+  padding-right: 20px
+}
+
+.graph {
+  position: relative;
+  max-width: 500px;
+  height: 200px;
+}
+
+.bar-text-content {
+  height: 100%;
+  width: 15%;
+  background: tomato;
+}
+
+.bar-lines-container {
+  width: 85%;
+  height: 100;
+  background: purple;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  left: 10%;
+}
+
+.bar {
+  height: 16.66%;
+  background: #e05b42;
+  z-index: 25;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  margin: 6px;
 }
 
 .navBar {
   height: 100%;
   width: 160px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
   padding-top: 20px;
+  padding: 15px;
+  
 }
 
 .navBar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #dadada;
   display: block;
 }
 
@@ -68,7 +107,7 @@
   margin-bottom: 60px;
 }
 
-.Login button {
+button {
   font-size: .9rem;
   display: inline-block;
   padding: 1em;margin: 1em;
@@ -79,7 +118,7 @@
   transition: all .6s ease-out;
 }
 
-.Login button:hover {
+button:hover {
   background-color:  rgb(70, 160, 120);
 }
 

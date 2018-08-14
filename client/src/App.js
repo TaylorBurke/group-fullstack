@@ -12,7 +12,6 @@ import ProtectedRoute from './ProtectedRoute';
 import { verify } from './redux/auth'
 import Profile from './Profile.js'
 
-
 class App extends Component {
   componentDidMount() {
     this.props.verify();
@@ -24,9 +23,8 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Goal  Streak</h1>
+            <h1 className="App-title">RPGoals</h1>
             <div className="App-intro">
-
               Grow your character in the game and in real life.
             </div>
           </header>

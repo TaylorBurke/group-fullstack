@@ -7,9 +7,9 @@ const goalSchema = new Schema({
     completed: Boolean,
     user: {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: 'User',
         required: true
     }
 });
 
-module.exports = mongoose.model('goal', goalSchema);
+module.exports = mongoose.model('Goal', goalSchema);

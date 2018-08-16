@@ -3,6 +3,8 @@ import {connect} from "react-redux";
 import './Profile.css';
 
 function Profile(props) {  
+
+    
     return (
         <div className='profilePage'>
             <div className='profileHeader'>
@@ -21,7 +23,7 @@ function Profile(props) {
                     <img className='shrinkThisImg' src={require('./trophy.svg')} />
                     <div className='column2'>
                         <h1 className='statTitle'>Completed</h1>
-                        <h1 className='biggerText'>0</h1>
+                        <h1 className='biggerText'>{props.goals.filter(goal => goal.completed).length}</h1>
                     </div>
                 </div>
                     
@@ -37,7 +39,7 @@ function Profile(props) {
                     <img src={require('./placeholder.svg')} />
                     <div className='column'>
                         <h1>Level</h1>
-                        <h1 className='biggerText'>5</h1>
+                        <h1 className='biggerText'>{Math.floor(props.goals.filter(goal => goal.completed).length / 5) +1}</h1>
                     </div>
                 </div>
             </div>

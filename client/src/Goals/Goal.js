@@ -9,7 +9,7 @@ function Goal(props) {
         <div className='goalPage'>
             <div>
                 <h3 className='spanTitle1'>Title: </h3>
-                <h3 className='spanTitle2'>{props.goal.title}</h3>
+                <h3 className='spanTitle2'> {props.goal.title}</h3>
             </div>
 
             <div>

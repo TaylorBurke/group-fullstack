@@ -11,6 +11,7 @@ import Profile from './Profile/Profile.js';
 import Archive from './Goals/Archive';
 
 class App extends Component {
+
   componentDidMount() {
     this.props.verify();
   }
@@ -28,7 +29,7 @@ class App extends Component {
                   <Redirect to='/profile' /> :
                   <Signup {...props} />} />
                 <Route exact path='/login' render={props => isAuthenticated ?
-                  <Redirect to='/profile' /> :
+                  <Redirect to='/goals' /> :
                   <Login {...props} />} />
                 <ProtectedRoute path="/goals" component={Goals} />
                 <ProtectedRoute path='/profile' component={Profile} />

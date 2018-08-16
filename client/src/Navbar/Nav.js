@@ -61,8 +61,8 @@ class Nav extends Component {
 
                 {!isAuthenticated && <Link to="/signup">Sign Up</Link>}
                 {!isAuthenticated && <Link to="/login">Log In</Link>}
-                {isAuthenticated && <Link to="/profile">Profile</Link>}
                 {isAuthenticated && <Link to="/goals">Goals</Link>}
+                {isAuthenticated && <Link to="/profile">Profile</Link>}
                 {isAuthenticated && <Link to="/archive">Archive</Link>}
                 {isAuthenticated && <button className='navBtn logout'onClick={this.props.logout}>Logout</button>}
             </div>

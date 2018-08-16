@@ -32,7 +32,7 @@
 .goalForm ::placeholder {
     background-color: #c06c84;
     color: rgb(53, 92, 125);
-    font-family: Geo-Regular;
+    font-family: 'Geo', sans-serif;
     text-align: center;
 }
 .goalInput {

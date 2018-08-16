@@ -4,7 +4,7 @@ import AddGoalFormContainer from './AddGoalFormContainer';
 import './GoalList.css'
 
 function GoalList(props) {
-    const goals = props.goals.map(goal => {
+    const goals = props.goals.filter(goal => !goal.completed).map(goal => {
         return (
             <GoalContainer
                 key={goal._id}
@@ -15,7 +15,7 @@ function GoalList(props) {
     return (
         <div className='goalsPage'>
             <AddGoalFormContainer />
-            <div className='goalBody'>
+            <div>
                 {goals}
             </div>
         </div>

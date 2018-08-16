@@ -33,7 +33,7 @@ label {
     color: white;
     height: 3vh;
     width: 5vw;
-    font-family: Geo-Regular;
+    font-family: 'Geo', sans-serif;
     font-size: 1rem;
     border: none;
 }

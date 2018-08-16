@@ -39,7 +39,7 @@ function Profile(props) {
                     <img src={require('./placeholder.svg')} />
                     <div className='column'>
                         <h1>Level</h1>
-                        <h1 className='biggerText'>5</h1>
+                        <h1 className='biggerText'>{Math.floor(props.goals.filter(goal => goal.completed).length / 5) +1}</h1>
                     </div>
                 </div>
             </div>

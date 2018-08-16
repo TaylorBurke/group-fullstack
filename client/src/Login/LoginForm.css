@@ -27,6 +27,18 @@
 ::placeholder {
     text-align: center;
     color: #355c7d;
+    font-family: 'Geo', sans-serif;
+}
+
+.loginInputs {
+    border: 3px solid #6c5b7b;
+    height: 5vh;
+    width: 10vw;
+    background-color: #c06c84;
+    margin: 0 .5rem;
+    color: white;
+    font-family: 'Geo', sans-serif;
+    font-size: 20px;
 }
 .goalPic {
     width: 50%;

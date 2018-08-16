@@ -61,3 +61,8 @@
     cursor: pointer;
     border-radius: 1rem;
 }
+
+.formBtn:hover {
+    color: #ffe6eb;;
+    transition-duration: 300ms;
+}

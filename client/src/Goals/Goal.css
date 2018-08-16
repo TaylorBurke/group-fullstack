@@ -12,12 +12,14 @@
     color: black;
     padding: 3px 0;
     font-size: 22px;
+    margin-right: 5px
 }
 .spanTitle2 {
     display: inline-block;
     color: #6c5b7b;
     padding: 3px 0;
     font-size: 22px;
+    margin-left: 2px
 }
 label {
     color: black;
@@ -31,11 +33,20 @@ label {
 .deleteBtn {
     background-color: red;
     color: white;
-    height: 3vh;
-    width: 5vw;
+    height: 4vh;
+    width: 8vw;
     font-family: 'Geo', sans-serif;
     font-size: 1rem;
     border: none;
+    font-size: 20px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.deleteBtn:hover{
+    background-color:#6c5b7b;
+    transition-duration: 300ms;
 }
 
 

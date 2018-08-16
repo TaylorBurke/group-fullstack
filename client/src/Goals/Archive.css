@@ -1,5 +1,26 @@
+.archiveHeader {
+    text-align: center;
+    background-color: #6c5b7b;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archiveHeading {
+    color: #f67280;
+    font-size: 5rem;
+}
+
 .archivePage {
     padding-left: 10vw;
     font-family: 'Geo', sans-serif;
+    background-color: #c06c84;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.completedGoals {
+    margin: 3px;
 }

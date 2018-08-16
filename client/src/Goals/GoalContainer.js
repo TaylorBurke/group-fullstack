@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import { editGoal, deleteGoal } from '../redux/goals';
 
 class GoalContainer extends React.Component {
-
     handleCompleted(e) {
-        this.props.editGoal(this.props.goal._id, { completed: e.target.checked })
+        const { target: { checked } } = e;
+        this.props.editGoal(this.props.goal._id, { completed: checked });
     }
 
     handleDelete() {

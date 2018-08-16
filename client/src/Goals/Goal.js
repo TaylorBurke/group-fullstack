@@ -4,6 +4,7 @@ import 'pretty-checkbox';
 import 'material-icons';
 
 function Goal(props) {
+    // const uncompletedGoals = props.goals.filter(goal => !goal.completed).map(goal => {
     return (
         <div className='goalPage'>
             <div>
@@ -12,8 +13,8 @@ function Goal(props) {
             </div>
 
             <div>
-                <h3 className='spanTitle1'>Difficulty: </h3> 
-                <h3 className='spanTitle2'> {props.goal.difficulty}</h3>
+                <h3 className='spanTitle1'>Difficulty: </h3>
+                <h3 className='spanTitle2'>{props.goal.difficulty}</h3>
             </div>
 
             <div className='toggles'>
@@ -31,6 +32,11 @@ function Goal(props) {
             </div>
         </div>
     )
+    // return (
+    //     <div>
+    //         {uncompletedGoals}
+    //     </div>
+    // )
 }
 
 export default Goal;

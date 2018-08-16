@@ -47,4 +47,4 @@ function Profile(props) {
     )
 }
 
-export default connect(state => state, {})(Profile); 
+export default connect(state => state, { })(Profile); 

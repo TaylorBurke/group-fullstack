@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     background-color: rgb(53, 92, 125);
-    font-family: Geo-Regular;
+    font-family: 'Geo', sans-serif;
     padding: 1rem .5rem;
     text-align: center;
 }
@@ -39,7 +39,7 @@ a:hover {
     background-color: transparent;
     border: none;
     font-size: 24px;
-    font-family: Geo-Regular;
+    font-family: 'Geo', sans-serif;
 }
 .theme {
     font-size: 20px;

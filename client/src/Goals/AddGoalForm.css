@@ -1,0 +1,63 @@
+.addGoalFormPage {
+    font-family: Geo-Regular;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.goalHeader {
+    background-color: #6c5b7b;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.goalHeading {
+    color: #f67280;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c06c84;
+    height: 20vh;
+}
+.goalForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #c06c84;
+}
+.goalForm ::placeholder {
+    background-color: #c06c84;
+    color: rgb(53, 92, 125);
+    font-family: Geo-Regular;
+    text-align: center;
+}
+.goalInput {
+    border: 3px solid #6c5b7b;
+    height: 5vh;
+    width: 10vw;
+    background-color: #c06c84;
+    margin: 0 .5rem;
+    color: white;
+    font-family: Geo-Regular;
+    font-size: 20px;
+}
+.formTitle {
+    color: #6c5b7b;
+    margin-right: 1rem;
+}
+.formBtn {
+    border: 3px solid #6c5b7b;
+    height: 5vh;
+    width: 7vw;
+    color: #355c7d;
+    background-color: #f67280;
+    font-family: Geo-Regular;
+    font-size: 20px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}

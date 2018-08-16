@@ -1,0 +1,43 @@
+.loginWrapper {
+    padding: 0 0 25vh 7vw;
+    height: 100vh;
+    font-family: Geo-Regular;
+    background-color: #6c5b7b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.loginHeading {
+    color: #f67280;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+.loginForm {
+    text-align: center;
+}
+.loginInputs {
+    background-color: #f67280;
+    border: 2px solid #355c7d;
+    height: 5vh;
+    width: 15vw;
+    margin: 5px;
+    color: whitesmoke;
+}
+::placeholder {
+    text-align: center;
+    color: #355c7d;
+}
+.goalPic {
+    width: 50%;
+    margin-right: 2.5vw;
+}
+.loginBtn {
+    background-color: #f67280;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 5rem;
+    border: none;
+    margin-left: .5rem;
+    color: white;
+}

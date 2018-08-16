@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.gif';
-import './App.css';
 import Login from './Login/LoginFormContainer';
 import Signup from './Signup/SignupFormContainer';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from './Navbar/Nav.js';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Goals from './Goals/';
 import ProtectedRoute from './ProtectedRoute';
-import { verify } from './redux/auth'
-import Profile from './Profile.js'
+import { verify } from './redux/auth';
+import Profile from './Profile/Profile.js';
+import Archive from './Goals/Archive';
 
 class App extends Component {
   componentDidMount() {
@@ -21,14 +19,6 @@ class App extends Component {
     const { isAuthenticated, loading } = this.props;
     return (
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">RPGoals</h1>
-            <div className="App-intro">
-              Grow your character in the game and in real life.
-            </div>
-          </header>
-
           <Nav />
             {loading ?
               <div>...Loading user data</div>
@@ -42,9 +32,9 @@ class App extends Component {
                   <Login {...props} />} />
                 <ProtectedRoute path="/goals" component={Goals} />
                 <ProtectedRoute path='/profile' component={Profile} />
+                <ProtectedRoute path='/archive' component={Archive} />
               </Switch>
             }
-          <Footer />
         </div>
     );
   }

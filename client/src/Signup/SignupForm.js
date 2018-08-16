@@ -1,23 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './SignupForm.css';
 
 function SignupForm(props) {
     return (
-        <div className='signup-wrapper'>
-            <form onSubmit={props.handleSubmit} autoComplete='off'>
-                <h3>Sign up</h3>
-                <input onChange={props.handleChange}
+        <div className='signupWrapper'>
+            <form className='signupForm' onSubmit={props.handleSubmit} autoComplete='off'>
+                <img className='goalPic' src={require('./goal.png')} />
+                <h3 className='signupHeading'>Sign up</h3>
+                <input className='signupInputs'
+                       onChange={props.handleChange}
                        value={props.username}
                        name='username'
                        type='text'
                        placeholder='Username'
                        autoComplete='off' />
-                <input onChange={props.handleChange}
+                <input className='signupInputs'
+                       onChange={props.handleChange}
                        value={props.password}
                        name='password'
                        type='password'
                        placeholder='Password'
                        autoComplete='off' />
-                <button type='submit'>Create Account</button>
+                <button className='signupBtn' type='submit'>Create Account</button>
                 <p>{props.errMsg}</p>
             </form>
         </div>

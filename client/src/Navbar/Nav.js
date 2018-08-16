@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { logout } from './redux/auth';
+import { logout } from '../redux/auth';
+import './Nav.css';
 
 class Nav extends Component {
     constructor() {
@@ -15,16 +16,10 @@ class Nav extends Component {
         this.css = `  
         html { filter: invert(100%); background: #fefefe; }  
         * { background-color: inherit }
-        img:not([src*=".svg"]), video { filter: invert(100%) }`
-
-
-
+        img:not([src*=".gif"]), video { filter: invert(100%) }`
 
         { this.isActive() ? this.css.trim() : this.css }
         // this.handleClick = this.handleClick.bind(this);
-
-
-
     }
 
     componentDidMount() {
@@ -36,7 +31,6 @@ class Nav extends Component {
     }
 
     // buttom click triggers state to update to active
-
     componentDidUpdate() {
         if (this.store) {
             this.store.setItem('Toggle', this.state.active);
@@ -53,28 +47,24 @@ class Nav extends Component {
     render() {
         const { isAuthenticated } = this.props;
         return (
-
-
             <div className="navBar">
-
-
-                {!isAuthenticated && <div className="nav-link"><Link to="/signup">Sign Up</Link></div>}
-                {!isAuthenticated && <div className="nav-link"><Link to="/login">Log In</Link></div>}
-                {isAuthenticated && <div className="nav-link"><Link to="/goals">Goals</Link></div>}
-                {isAuthenticated && <div className="nav-link"><Link to="/profile">Profile</Link></div>}
-                {isAuthenticated && <div className="nav-link"><button onClick={this.props.logout}>Logout</button></div>}
-
-                <Link to="/dash"> Dashboard </Link>
-
+                <img src={require('../logo.gif')} className="App-logo" alt="logo" />
+                <h2 className='navName'>{this.props.user.username}</h2>
                 <div>
-                    <button className="Toggle" aria-pressed={this.isActive()} onClick={this.themeSwitcher}>
-                        dark theme:
-                    <span aria-hidden="true">{this.isActive() ? 'on' : 'off'}</span>
+                    <button className='navBtn theme' aria-pressed={this.isActive()} onClick={this.themeSwitcher}>
+                    <span aria-hidden="false">{this.isActive() ? 'Light Theme' : 'Dark Theme'}</span>
                     </button>
-                    <style media={this.isActive() ? 'screen' : 'none'}>
+                    <style media={this.isActive() ? 'none' : 'screen'}>
                         {this.css}
                     </style>
                 </div>
+
+                {!isAuthenticated && <Link to="/signup">Sign Up</Link>}
+                {!isAuthenticated && <Link to="/login">Log In</Link>}
+                {isAuthenticated && <Link to="/profile">Profile</Link>}
+                {isAuthenticated && <Link to="/goals">Goals</Link>}
+                {isAuthenticated && <Link to="/archive">Archive</Link>}
+                {isAuthenticated && <button className='navBtn logout'onClick={this.props.logout}>Logout</button>}
             </div>
 
         )

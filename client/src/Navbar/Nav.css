@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(53, 92, 125);
+    font-family: Geo-Regular;
+    padding: 1rem .5rem;
+    text-align: center;
+}
+.navName {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #f67280;
+    display: block;
+    padding: 1rem 0 5rem 0;
+}
+a {
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: #c06c84;
+    display: block;
+}
+a:hover {
+    color: #f67280;
+}
+.navBtn {
+    color: #c06c84;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-family: Geo-Regular;
+}
+.theme {
+    font-size: 20px;
+    padding-bottom: .8rem;
+}
+.logout {
+    padding-top: 15rem;
+}
+.navBtn:hover {
+    color: #f67280;
+}
+img {
+    background-color: transparent;
+    min-width: 100px;
+}
+
+/* https://colorhunt.co/palette/100885 */
+
+
+

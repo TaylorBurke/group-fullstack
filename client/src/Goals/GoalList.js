@@ -1,6 +1,7 @@
 import React from 'react';
 import GoalContainer from './GoalContainer';
 import AddGoalFormContainer from './AddGoalFormContainer';
+import './GoalList.css'
 
 function GoalList(props) {
     const goals = props.goals.map(goal => {
@@ -12,9 +13,11 @@ function GoalList(props) {
     })
 
     return (
-        <div>
+        <div className='goalsPage'>
             <AddGoalFormContainer />
-            {goals}
+            <div className='goalBody'>
+                {goals}
+            </div>
         </div>
     )
 }

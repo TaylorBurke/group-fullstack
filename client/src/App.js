@@ -25,6 +25,7 @@ class App extends Component {
               <div>...Loading user data</div>
               :
               <Switch>
+                <Route exact path='/' component={Signup} />
                 <Route exact path='/signup' render={props => isAuthenticated ?
                   <Redirect to='/profile' /> :
                   <Signup {...props} />} />

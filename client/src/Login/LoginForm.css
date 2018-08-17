@@ -24,21 +24,20 @@
     margin: 5px;
     color: whitesmoke;
 }
-::placeholder {
-    text-align: center;
-    color: #355c7d;
-    font-family: 'Geo', sans-serif;
+.loginInputs::placeholder {
+    font-size: 1rem;
 }
 
 .loginInputs {
-    border: 3px solid #6c5b7b;
+    background-color: #f67280;
+    border: 2px solid #355c7d;
     height: 5vh;
-    width: 10vw;
-    background-color: #c06c84;
-    margin: 0 .5rem;
-    color: white;
+    width: 15vw;
+    margin: 5px;
+    color: whitesmoke;
+    font-size: 1.2rem;
     font-family: 'Geo', sans-serif;
-    font-size: 20px;
+    padding: 0 .5rem;
 }
 .goalPic {
     width: 50%;

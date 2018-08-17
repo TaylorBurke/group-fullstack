@@ -12,11 +12,7 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
-    },
-    email: String,
-    gender: String,
-    level: Number,
-    EXP: Number
+    }
 });
 
 userSchema.pre('save', function(next) {

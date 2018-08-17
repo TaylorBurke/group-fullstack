@@ -3,8 +3,6 @@ import {connect} from "react-redux";
 import './Profile.css';
 
 function Profile(props) {  
-
-    
     return (
         <div className='profilePage'>
             <div className='profileHeader'>
@@ -27,13 +25,13 @@ function Profile(props) {
                     </div>
                 </div>
                     
-                <div className='column columnNeedsSidePadding'>
+                {/* <div className='column columnNeedsSidePadding'>
                     <img src={require('./flame.svg')} />
                     <div className='column'>
                         <h1>Streak</h1>
-                        <h1 className='biggerText'>15</h1>
+                        <h1 className='biggerText'>0</h1>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='column columnNeedsSidePadding'>
                     <img src={require('./placeholder.svg')} />

@@ -40,7 +40,7 @@ export function signup(userInfo) {
 
 export function login(credentials) {
     return dispatch => {
-        axios.post('/auth/login', credentials)
+        return axios.post('/auth/login', credentials)
             .then(response => {
                 const { token, user } = response.data;
                 localStorage.setItem('token', token);
@@ -56,7 +56,7 @@ export function login(credentials) {
 
 export function verify() {
     return dispatch => {
-        profileAxios.get('/api/profile')
+      return profileAxios.get('/api/profile')
             .then(response => {
                 let { user } = response.data;
                 dispatch(authenticate(user));

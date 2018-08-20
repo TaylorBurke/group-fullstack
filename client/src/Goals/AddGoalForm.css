@@ -29,11 +29,12 @@
     align-items: center;
     background-color: #c06c84;
 }
-.goalForm ::placeholder {
+.goalInput::placeholder {
     background-color: #c06c84;
     color: rgb(53, 92, 125);
     font-family: 'Geo', sans-serif;
     text-align: center;
+    padding: 0 .5rem;
 }
 .goalInput {
     border: 3px solid #6c5b7b;
@@ -44,6 +45,7 @@
     color: white;
     font-family: 'Geo', sans-serif;
     font-size: 20px;
+    padding: 0 .5rem;
 }
 .formTitle {
     color: #6c5b7b;

@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "nodemonConfig": {
     "ignore": [
@@ -24,5 +25,8 @@
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.5",
     "morgan": "^1.9.0"
+  },
+  "engines": {
+    "node": "10.4.0"
   }
 }

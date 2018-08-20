@@ -9,6 +9,30 @@ function Profile(props) {
                 <h1 className='profileHeading'>PROFILE</h1>
             </div>
             <div className='statContainer'>
+            <div className='column columnNeedsSidePadding'>
+                    <img src={require('./placeholder.svg')} />
+                    <div className='column'>
+                        <h1>Level</h1>
+                        <h1 className='biggerText'>{Math.floor(props.goals.filter(goal => goal.completed).length / 5) +1}</h1>
+                    </div>
+                </div>
+
+                <div className='column columnNeedsSidePadding'>
+                    <img src={require('./flame.svg')} />
+                    <div className='column'>
+                        <h1>Streak</h1>
+                        <h1 className='biggerText'>{ props.goals
+                            .filter(goal => goal.completed)
+                            .filter(goal => {
+                                const rightNow = new Date().getTime();
+                                const goalUpdatedAt = new Date(goal.updatedAt).getTime();
+                                const twentyFourHrs = 86400000;
+                                return goalUpdatedAt > rightNow - twentyFourHrs;
+                            }).length }
+                        </h1>
+                    </div>
+                </div>
+
                 <div className='column columnNeedsTopPadding'>
                     <img className='shrinkThisImg' src={require('./target.svg')} />
                     <div className='column'>
@@ -22,22 +46,6 @@ function Profile(props) {
                     <div className='column2'>
                         <h1 className='statTitle'>Completed</h1>
                         <h1 className='biggerText'>{props.goals.filter(goal => goal.completed).length}</h1>
-                    </div>
-                </div>
-                    
-                {/* <div className='column columnNeedsSidePadding'>
-                    <img src={require('./flame.svg')} />
-                    <div className='column'>
-                        <h1>Streak</h1>
-                        <h1 className='biggerText'>0</h1>
-                    </div>
-                </div> */}
-
-                <div className='column columnNeedsSidePadding'>
-                    <img src={require('./placeholder.svg')} />
-                    <div className='column'>
-                        <h1>Level</h1>
-                        <h1 className='biggerText'>{Math.floor(props.goals.filter(goal => goal.completed).length / 5) +1}</h1>
                     </div>
                 </div>
             </div>

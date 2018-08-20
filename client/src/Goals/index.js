@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import { loadGoals } from '../redux/goals';
 
 class GoalListContainer extends React.Component {
-    
-    
   componentDidMount() {
     this.props.loadGoals();
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import LoginForm from './LoginForm';
 import { connect } from 'react-redux';
 import { login } from '../redux/auth';
+import { loadGoals } from '../redux/goals';
 
 class LoginFormContainer extends React.Component {
     constructor() {
@@ -37,7 +38,7 @@ class LoginFormContainer extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.login(this.state.inputs);
+        this.props.login(this.state.inputs).then(()=> this.props.loadGoals())
         this.clearInputs();
     }
 
@@ -60,4 +61,4 @@ class LoginFormContainer extends React.Component {
     }
 }
 
-export default connect(state => state.user, { login })(LoginFormContainer);
+export default connect(state => state.user, { login, loadGoals })(LoginFormContainer);

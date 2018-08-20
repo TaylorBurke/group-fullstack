@@ -49,7 +49,7 @@ class Nav extends Component {
         return (
             <div className="navBar">
                 <img src={require('../logo.gif')} className="App-logo" alt="logo" />
-                <h2 className='navName'>{this.props.user.username}</h2>
+                <h2 className='navName'>{this.props.user.username.toUpperCase()}</h2>
                 <div>
                     <button className='navBtn theme' aria-pressed={this.isActive()} onClick={this.themeSwitcher}>
                     <span aria-hidden="false">{this.isActive() ? 'Light Theme' : 'Dark Theme'}</span>
@@ -66,7 +66,6 @@ class Nav extends Component {
                 {isAuthenticated && <Link to="/archive">Archive</Link>}
                 {isAuthenticated && <button className='navBtn logout'onClick={this.props.logout}>Logout</button>}
             </div>
-
         )
     }
 }

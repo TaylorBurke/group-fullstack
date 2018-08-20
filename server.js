@@ -9,8 +9,6 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const expressJwt = require('express-jwt');
 
-const goalRouter = require('./routes/goals');
-
 // variables
 const PORT = process.env.PORT || 3030;
 

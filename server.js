@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3030;
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "client", "build")))
+
 
 mongoose.Promise = global.Promise;
 
@@ -31,6 +31,7 @@ app.use('/api', expressJwt({secret: process.env.SECRET}));
 app.use('/api/goals', require('./routes/goals'));
 app.use("/api/profile", require("./routes/profile"));
 
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });

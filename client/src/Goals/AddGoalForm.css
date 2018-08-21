@@ -65,6 +65,28 @@
 }
 
 .formBtn:hover {
-    color: #ffe6eb;;
+    color: #ffe6eb;
     transition-duration: 300ms;
+}
+
+@media (max-width: 1000px) {
+    .formTitle {
+        font-size: 20px;
+    }
+    .goalForm {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .goalInput {
+        width: 100%;
+    }
+    .formBtn {
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        width: 50%;
+        height: 4vh;
+        font-size: 16px;
+    }
 }

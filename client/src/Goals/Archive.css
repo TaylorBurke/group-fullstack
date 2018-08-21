@@ -9,7 +9,7 @@
 
 .archiveHeading {
     color: #f67280;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .archivePage {
@@ -23,4 +23,18 @@
 
 .completedGoals {
     margin: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+    .completedGoals {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .archivePage {
+        padding-left: 15vw;
+    }
 }

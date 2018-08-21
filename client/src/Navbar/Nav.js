@@ -48,7 +48,7 @@ class Nav extends Component {
         const { isAuthenticated } = this.props;
         return (
             <div className="navBar">
-                <img src={require('../logo.gif')} className="App-logo" alt="logo" />
+                <img src={require('../logo.gif')} className="sprite" alt="logo" />
                 <h2 className='navName'>{this.props.user.username.toUpperCase()}</h2>
                 <div>
                     <button className='navBtn theme' aria-pressed={this.isActive()} onClick={this.themeSwitcher}>
@@ -64,7 +64,7 @@ class Nav extends Component {
                 {isAuthenticated && <Link to="/goals">Goals</Link>}
                 {isAuthenticated && <Link to="/profile">Profile</Link>}
                 {isAuthenticated && <Link to="/archive">Archive</Link>}
-                {isAuthenticated && <button className='navBtn logout'onClick={this.props.logout}>Logout</button>}
+                {isAuthenticated && <button className='navBtn theme' onClick={this.props.logout}>Logout</button>}
             </div>
         )
     }

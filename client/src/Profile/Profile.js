@@ -9,16 +9,16 @@ function Profile(props) {
                 <h1 className='profileHeading'>PROFILE</h1>
             </div>
             <div className='statContainer'>
-            <div className='column columnNeedsSidePadding'>
-                    <img src={require('./placeholder.svg')} />
+                <div className='column'>
+                    <img className='profileImg' src={require('./placeholder.svg')} />
                     <div className='column'>
                         <h1>Level</h1>
                         <h1 className='biggerText'>{Math.floor(props.goals.filter(goal => goal.completed).length / 5) +1}</h1>
                     </div>
                 </div>
 
-                <div className='column columnNeedsSidePadding'>
-                    <img src={require('./flame.svg')} />
+                <div className='column'>
+                    <img className='profileImg' src={require('./flame.svg')} />
                     <div className='column'>
                         <h1>Streak</h1>
                         <h1 className='biggerText'>{ props.goals
@@ -33,16 +33,16 @@ function Profile(props) {
                     </div>
                 </div>
 
-                <div className='column columnNeedsTopPadding'>
-                    <img className='shrinkThisImg' src={require('./target.svg')} />
+                <div className='column'>
+                    <img className='profileImg' src={require('./target.svg')} />
                     <div className='column'>
                         <h1 className='statTitle'>Total Goals</h1>
                         <h1 className='biggerText'>{props.goals.length}</h1>
                     </div>
                 </div>
             
-                <div className='column columnNeedsTopPadding'>
-                    <img className='shrinkThisImg' src={require('./trophy.svg')} />
+                <div className='column'>
+                    <img className='profileImg' src={require('./trophy.svg')} />
                     <div className='column2'>
                         <h1 className='statTitle'>Completed</h1>
                         <h1 className='biggerText'>{props.goals.filter(goal => goal.completed).length}</h1>

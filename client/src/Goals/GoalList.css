@@ -3,5 +3,10 @@
     height: 100vh;
     padding-left: 10vw;
     font-family: 'Geo', sans-serif;
+}
 
+@media (max-width: 500px) {
+    .goalsPage {
+        padding-left: 15vw;
+    }
 }

@@ -31,22 +31,46 @@
     margin: 10% 0 0 12%;
     color: white;
 }
-.shrinkThisImg {
-    width: 1%;
+.profileImg {
+    width: 50%;
     padding-bottom: 10%;
 }
-.column {
+.column, .column2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.columnNeedsTopPadding {
-    padding-top: 4%;
-}
-.columnNeedsSidePadding {
-    padding: 0 2%;
-}
 .biggerText {
     font-size: 4rem;
+}
+
+@media (max-width: 750px) {
+    .profileImg {
+        width: 30%;
+        padding-bottom: 0;
+    }
+    .statContainer {
+        flex-direction: column;
+        height: 70vh;
+    }
+    .column {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 500px) {
+    .profileImg {
+        width: 20%;
+    }
+    .profilePage {
+        padding: 0 0 0 15vw;
+    }
+    .statTitle {
+        font-size: 1.5rem;
+    }
+    .biggerText {
+        font-size: 2rem;
+        display: inline-block;
+    }
 }

@@ -7,7 +7,7 @@
 .navBar {
     height: 100vh;
     width: 10vw;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -17,12 +17,11 @@
     text-align: center;
 }
 .navName {
+    padding: .5rem 0;
     text-decoration: none;
-    text-transform: capitalize;
-    font-size: 30px;
-    color: #f67280;
+    font-size: 24px;
+    color: #c06c84;
     display: block;
-    padding: 1rem 0 5rem 0;
 }
 a {
     padding: .5rem 0;
@@ -45,15 +44,41 @@ a:hover {
     font-size: 20px;
     padding-bottom: .8rem;
 }
-.logout {
-    padding-top: 15rem;
-}
 .navBtn:hover {
     color: #f67280;
 }
-img {
+.sprite {
     background-color: transparent;
     min-width: 100px;
+    padding-right: 5px;
+}
+
+@media (max-width: 1200px) {
+    .sprite {
+        min-width: 70px;
+    }
+    a, .theme, .navName {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 800px) {
+    .navBar {
+        width: 12vw;
+    }
+    .sprite {
+        padding-right: 1rem;
+    }
+    a, .theme, .navName {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 500px) {
+    .navBar {
+        width: 15vw;
+    }
+    .sprite {
+        display: none;
+    }
 }
 
 /* https://colorhunt.co/palette/100885 */

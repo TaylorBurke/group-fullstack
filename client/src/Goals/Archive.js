@@ -12,18 +12,15 @@ function Archive(props) {
     })
     return (
         <div>
-        
-
-        <div className="archivePage">
-        <div className='archiveHeader'>
-                <h1 className='archiveHeading'>COMPLETED</h1>
-            </div>
-            <div className ="completedGoals">
-            {goals}
+            <div className="archivePage">
+            <div className='archiveHeader'>
+                    <h1 className='archiveHeading'>COMPLETED</h1>
+                </div>
+                <div className ="completedGoals">
+                    {goals}
+                </div>
             </div>
         </div>
-        </div>
-
     )
 }
 

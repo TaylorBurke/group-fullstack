@@ -17,19 +17,22 @@
     font-family: 'Geo', sans-serif;
     background-color: #c06c84;
     height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
 .completedGoals {
     margin: 3px;
-    display: flex;
-    flex-direction: row;
 }
 
 @media (max-width: 1000px) {
     .completedGoals {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .archivePage {
+        padding-left: 12vw;
     }
 }
 

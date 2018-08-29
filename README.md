@@ -1,4 +1,7 @@
-hello!
+If you would like to see this project live, go here:
+https://gamified-goaltracker.herokuapp.com/
+
+===
 
 This is the MERN stack group project of Taylor and Roy!
 

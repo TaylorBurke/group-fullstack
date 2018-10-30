@@ -3,7 +3,7 @@ https://gamified-goaltracker.herokuapp.com/
 
 ===
 
-This is the MERN stack group project of Taylor and Roy!
+This is the MERN stack group project of Taylor and [Roy](https://github.com/roydensynderen)
 
 Follow this guide for Git:
 
